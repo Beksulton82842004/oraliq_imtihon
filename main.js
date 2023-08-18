@@ -4,7 +4,7 @@ const elSearchInput = document.querySelector("#search-input");
 const elSearchBtn = document.querySelector("#search-btn"); 
 
 
-function renderProducts(array,parent){
+function renderPokemon(array,parent){
     parent.innerHTML = ""
     
     array.forEach((element) => {
@@ -31,7 +31,7 @@ function renderProducts(array,parent){
     })
 }
 
-renderProducts(pokemons,elCards);
+renderPokemon(pokemons,elCards);
 
 
 elCards.addEventListener("click", function ( evt ) {
@@ -49,7 +49,7 @@ elCards.addEventListener("click", function ( evt ) {
     }
     pokemons = newArray
     
-    renderProducts(pokemons,elCards)
+    renderPokemon(pokemons,elCards)
     
     }
     })
@@ -72,8 +72,8 @@ elCards.addEventListener("click", function ( evt ) {
             }
 
         })
-        renderProducts(newArray,elCards) 
+        renderPokemon(newArray,elCards); 
     })
     
-    renderProducts(pokemons,elCards)
+    renderPokemon(pokemons,elCards);
    
