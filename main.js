@@ -59,7 +59,7 @@ elCards.addEventListener("click", function ( evt ) {
 
 
     elSearchBtn.addEventListener("click", evt => {
-
+        evt.preventDefault()
         const newArray = []
 
         pokemons.forEach((pokemons) => {
